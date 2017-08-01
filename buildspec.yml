@@ -3,11 +3,11 @@ phases:
   pre_build:
     commands:
       - echo Restore started on `date`
-      - dotnet restore testcodedeploy/testcodedeploy.csproj
+      - dotnet restore testcodedeploy.csproj
   build:
     commands:
       - echo Build started on `date`
-      - dotnet publish -c release -o ./build_output testcodedeploy/testcodedeploy.csproj
+      - dotnet publish -c release -o ./build_output testcodedeploy.csproj
 artifacts:
   files:
     - testcodedeploy/build_output/**/*
