@@ -27,6 +27,8 @@ namespace testcodedeploy
             {
                 app.UseDeveloperExceptionPage();
             }
+            
+            app.UseWelcomePage();
 
             app.Run(async (context) =>
             {
